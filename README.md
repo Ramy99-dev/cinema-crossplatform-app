@@ -1,4 +1,5 @@
 # CINEAPP
+<img  alt="logo" width="50px" src="https://github.com/Ramy99-dev/cinema-crossplatform-app/blob/main/media/app_logo.png" />
 
 
 ### Description
@@ -48,7 +49,6 @@ To run locally :
 2. Run flutter application
 ### Demo 
 
-<video src='Demo/demo.mp4' width=180/>
-
+![](https://github.com/Ramy99-dev/cinema-crossplatform-app/blob/main/media/demo.gif)
 
 
