@@ -1,0 +1,18 @@
+<form [formGroup]="categoryForm" (submit)="addCategory()">
+    <div class="container">
+        <div class="form">
+        <div class="form-group">
+            <label>Category name</label><br>
+            <input type="text" formControlName="name">
+        </div>
+
+        <div class="form-group">
+            <label>Description</label><br>
+            <textarea cols="50" rows="10" formControlName="description"></textarea>
+        </div>
+        
+    
+        <button [disabled]="!categoryForm.valid">Add Category</button>
+    </div>
+</div>
+</form>

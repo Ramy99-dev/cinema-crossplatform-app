@@ -1,0 +1,24 @@
+<div class="container">
+     
+    <div #pdfTable class="data-table">
+        <table  class="fl-table">
+            <thead>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Movie</th>
+                <th>Date</th>
+                <th>Seets</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let reservation of reservations ; let i = index ">
+                    <td>{{reservation._id}}</td>
+                    <td>{{reservation.idUser?.username}}</td>
+                    <td>{{reservation.idMovie?.titre}}</td>
+                    <td>{{reservation.idMovie?.date}}</td>
+                    <td>{{reservation.nbr}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   
+</div>

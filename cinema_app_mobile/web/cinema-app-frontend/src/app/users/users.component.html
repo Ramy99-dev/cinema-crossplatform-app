@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="data-table">
+        <table class="fl-table">
+            <thead>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Delete</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users ; let i = index ">
+                    <td>{{user._id}}</td>
+                    <td>{{user.username}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.gender}}</td>
+                    <td>{{user.date}}</td>
+                    <td><button class="btn-delete" (click)="delete(user._id! , i)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   
+</div>
+

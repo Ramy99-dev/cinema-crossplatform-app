@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+.container{
+    background-color: #101010;
+    height: 100vh;
+    display: flex;
+    width: 96.1vw;
+    flex-direction: column;
+}
+.dashboard-numbers{
+    display: flex;
+    justify-content: center;
+    background-color:  rgba(30, 45, 76,0.5);
+    div{
+        color:white;
+        flex-basis: 40%;
+        border-right:1px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'PT Serif', serif;
+        padding:10px;   
+    }
+    div:last-child{
+        border-right:none;
+    }
+    
+}
+.dashboard-charts{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color:  rgba(30, 45, 76,0.3);
+    flex-wrap: wrap;
+   
+}
+chart{
+    width:50%;
+    
+}
+@media only screen and (max-width: 835px) {
+    .container{
+        height: auto;
+    }
+    .dashboard-numbers,.dashboard-charts {
+      flex-direction: column;
+     
+    }
+    chart{
+        width:100%;
+        
+    }
+    .dashboard-charts{
+        justify-content: center;
+        gap:20px;
+    }
+    .dashboard-numbers{
+        
+        div{
+            border-right:none;  
+            border-bottom:1px solid white ;
+        }
+    }
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .container{
+        width:100vw;
+    }
+}

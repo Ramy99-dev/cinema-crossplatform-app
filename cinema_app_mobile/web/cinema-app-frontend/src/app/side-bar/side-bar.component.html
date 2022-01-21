@@ -1,0 +1,26 @@
+<div class="container">
+    <div [routerLink]="['/dashboard']" class="nav-item">
+        <fa-icon class="icon" [icon]="faChartPie"></fa-icon>
+        <span>Dashboard</span>
+    </div>
+    <div [routerLink]="['/movie']" class="nav-item">
+        <fa-icon class="icon" [icon]="faFilm"></fa-icon>
+        <span>Movie</span>
+    </div>
+    <div [routerLink]="['/category']" class="nav-item">
+        <fa-icon class="icon" [icon]="faVideo"></fa-icon>
+        <span>Category</span>
+    </div>
+    <div [routerLink]="['/users']" class="nav-item">
+        <fa-icon class="icon" [icon]="faUser"></fa-icon>
+        <span>Users</span>
+    </div>
+    <!--<div [routerLink]="['/reservations']" class="nav-item">
+        <fa-icon class="icon" [icon]="faCalendarAlt"></fa-icon>
+        <span>Reservations</span>
+    </div>-->
+    <div (click)="logout()" class="nav-item last">
+        <fa-icon class="icon" [icon]="faSignOutAlt"></fa-icon>
+        <span>Logout</span>
+    </div>
+</div>

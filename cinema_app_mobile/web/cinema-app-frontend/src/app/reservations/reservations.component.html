@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="print">
+        <button (click)="savePdf()">Print</button>
+    </div> 
+    <div #pdfTable class="data-table">
+        <table  class="fl-table">
+            <thead>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Movie</th>
+                <th>Date</th>
+                <th>Seets</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let reservation of reservations ; let i = index ">
+                    <td>{{reservation._id}}</td>
+                    <td (click)="getUserDetails(reservation.idUser?._id!)">{{reservation.idUser?.username}}</td>
+                    <td>{{reservation.idMovie?.titre}}</td>
+                    <td>{{reservation.idMovie?.date}}</td>
+                    <td>{{reservation.nbr}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   
+</div>
+

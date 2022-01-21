@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="data-table">
+        <table class="fl-table">
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let category of categories ; let i = index ">
+                    <td>{{category._id}}</td>
+                    <td>{{category.nom}}</td>
+                    <td>{{category.description}}</td>
+                    <td><button class="btn-delete" (click)="delete(category._id! , i)" >Delete</button></td>
+                    <td><button class="btn-update" (click)="openEdit(category._id!)">Update</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+       <add-category (sendDataToCategoryParent)="receiveData($event)"></add-category>
+    </div>
+</div>
+

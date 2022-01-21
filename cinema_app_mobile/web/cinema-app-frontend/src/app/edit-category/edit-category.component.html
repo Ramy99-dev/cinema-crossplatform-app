@@ -1,0 +1,23 @@
+<form [formGroup]="categoryForm" (submit)="editCategory()">
+    <div class="container">
+        <div class="form">
+            <div class="form-group">
+                <label>ID</label><br>
+                <input [(ngModel)]="category._id" readonly type="text" formControlName="id">
+            </div>
+            <div class="form-group">
+                <label>Category name</label><br>
+                <input [(ngModel)]="category.nom" type="text" formControlName="name">
+            </div>
+
+            <div class="form-group">
+                <label>Description</label><br>
+                <textarea [(ngModel)]="category.description" cols="50" rows="10"
+                    formControlName="description"></textarea>
+            </div>
+
+
+            <button [disabled]="!categoryForm.valid">Add Category</button>
+        </div>
+    </div>
+</form>

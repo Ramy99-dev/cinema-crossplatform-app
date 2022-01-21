@@ -1,0 +1,49 @@
+<form [formGroup]="movieForm" (submit)="addMovie()">
+    <div class="container">
+        <div class="form">
+            <div class="form-group">
+                <label>ID</label><br>
+                <input [(ngModel)]="movie._id"  readonly type="text" formControlName="id">
+            </div>
+        <div class="form-group">
+            <label>Title</label><br>
+            <input [(ngModel)]="movie.titre" type="text" formControlName="title">
+        </div>
+        <div class="form-group">
+            <label>Date</label><br>
+            <input type="date" [(ngModel)]="movie.date" formControlName="date">
+        </div>
+        <div class="form-group">
+            <label>Time</label><br>
+            <input  [(ngModel)]="movie.duree" type="time" formControlName="time">
+        </div>
+        <div class="form-group">
+            <label>Director</label><br>
+            <input  [(ngModel)]="movie.realisateur" type="text" formControlName="director">
+        </div>
+        <div class="form-group">
+            <label>Description</label><br>
+            <textarea formControlName="description"  [(ngModel)]="movie.description" cols="50" rows="10" formControlName="description"></textarea>
+        </div>
+       <div class="form-group">
+            <label>Movie Banner</label><br>
+            <input  [(ngModel)]="movie.img" type="file"  (input)='fileChoosen($event)' >
+        </div>
+        <div class="form-group">
+            <label>Category</label><br>
+            <select *ngIf="categ != null"  [(ngModel)]="movie.categorie?.nom!" formControlName="category">
+                <option *ngFor="let c of categ" value={{c}}>{{c}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Price</label><br>    
+            <input  [(ngModel)]="movie.prix" type="number" formControlName="price">
+        </div>
+        <div class="form-group">
+            <label>Number of seats</label><br>    
+            <input  [(ngModel)]="movie.nbr" type="number" formControlName="nbr">
+        </div>
+        <button [disabled]="!movieForm.valid">Edit</button>
+    </div>
+</div>
+</form>

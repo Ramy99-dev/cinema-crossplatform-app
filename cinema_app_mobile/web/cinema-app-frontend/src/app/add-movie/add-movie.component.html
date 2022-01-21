@@ -1,0 +1,46 @@
+<form [formGroup]="movieForm" (submit)="addMovie()">
+    <div class="container">
+        <div class="form">
+        <div class="form-group">
+            <label>Title</label><br>
+            <input type="text" formControlName="title">
+        </div>
+        <div class="form-group">
+            <label>Date</label><br>
+            <input type="date" formControlName="date">
+        </div>
+        <div class="form-group">
+            <label>Time</label><br>
+            <input type="time" formControlName="time">
+        </div>
+        <div class="form-group">
+            <label>Director</label><br>
+            <input type="text" formControlName="director">
+        </div>
+        <div class="form-group">
+            <label>Description</label><br>
+            <textarea cols="50" rows="10" formControlName="description"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Movie Banner</label><br>
+            <input formControlName="img" type="file"  (input)='fileChoosen($event)' >
+        </div>
+        <div class="form-group">
+            <label>Category</label><br>
+            <select formControlName="category">
+                <option *ngFor="let category of categories" value={{category._id}}>{{category.nom}}</option>
+        
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Price</label><br>    
+            <input type="number" formControlName="price">
+        </div>
+        <div class="form-group">
+            <label>Number of seats</label><br>
+            <input type="number" formControlName="nbr">
+        </div>
+        <button [disabled]="!movieForm.valid">Add Movie</button>
+    </div>
+</div>
+</form>

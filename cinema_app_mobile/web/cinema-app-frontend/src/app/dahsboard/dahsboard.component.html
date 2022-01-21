@@ -1,0 +1,20 @@
+<div class="container">
+   <div class="dashboard-numbers">
+      <div>
+         <h2>{{number.users}}</h2>
+         <span>Users</span>
+      </div>
+      <div>
+         <h2>{{number.movies}}</h2>
+         <span>Movies</span>
+      </div>
+      <div>
+         <h2>{{number.categories}}</h2>
+         <span>Category</span>
+      </div>
+   </div>
+   <div class="dashboard-charts">
+      <chart [pct]="'movie'"></chart>
+      <chart [pct]="'user'"></chart>
+   </div>
+</div>

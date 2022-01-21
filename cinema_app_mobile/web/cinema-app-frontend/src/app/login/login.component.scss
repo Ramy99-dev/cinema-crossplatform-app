@@ -1,0 +1,52 @@
+.container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    
+}
+form{
+    position: absolute;
+}
+.admin-connection{
+    border-radius: 20px ;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    background-color: rgba(6, 19, 39, 0.3);
+    backdrop-filter: blur(10px);
+    padding:40px;
+    color:white;
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    button{
+        font-family: 'PT Serif', serif;
+     
+        border:none;   background-image: linear-gradient(to right, rgb(27, 56, 100,1) , rgb(27, 56, 100,0.8));
+        color:white;
+        padding: 5px;
+    }
+    input{
+        opacity: 0.5;
+        font-family: 'PT Serif', serif;
+        
+    }
+}
+
+#myVideo {
+    position: fixed;
+  
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 1;
+    z-index: 0;
+  }
+  

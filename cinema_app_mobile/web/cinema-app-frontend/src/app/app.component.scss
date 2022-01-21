@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+.container{
+    display: flex;
+    font-family: 'PT Serif', serif;
+  
+}
+.sidebar{
+    width:5%;
+    background-color: black;
+}
+
+@media only screen and (max-width: 1300px) {
+    .container{
+        flex-direction: column;
+    }
+    .sidebar{
+        height: 5%;
+        width: 100vw;
+    }
+}
