@@ -39,7 +39,7 @@ Mobile Application where users can :
 <img  alt="mongoDB" width="50px" src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/45/MongoDB-Logo.svg/1280px-MongoDB-Logo.svg.png" />
 
 To run locally : 
-- prerequisite : You mst create Database on MongoAtlas 
+- prerequisite :  create Database on MongoAtlas 
 
 - Web : <br/>
 1. Run  ```npm install``` (in both Angular and NodeJS) to install dependecies
