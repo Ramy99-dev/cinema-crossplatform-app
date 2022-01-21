@@ -26,7 +26,7 @@ Mobile Application where users can :
 
 
 
-### Technhologies
+### Technologies
 
 <h5> Front-end </h5>
 <img  alt="angular" width="50px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/langfr-220px-Angular_full_color_logo.svg.png" />
