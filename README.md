@@ -43,8 +43,8 @@ To run locally :
 
 - Web : <br/>
 1. Run  ```npm install``` (in both Angular and NodeJS) to install dependecies
-2. to start NodeJS app  ```nodemon .``` 
-3. to start Angular app  ```ng serve``` 
+2. to start NodeJS app run ```nodemon .``` 
+3. to start Angular app run ```ng serve``` 
 
 - Mobile : <br/>
 1. Run ```dart pub get``` to install dependecies .
